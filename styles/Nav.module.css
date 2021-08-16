@@ -1,0 +1,101 @@
+.a {
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.navLogo {
+  font-size: 2rem;
+}
+
+.linkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger div {
+  width: 40px;
+  height: 4px;
+  background-color: #fff;
+  margin-bottom: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .linkContainer {
+    position: fixed;
+    bottom: -1000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 30vh;
+    width: 95%;
+    margin: auto;
+    background-color: #ebebeb;
+    text-align: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+  }
+  .active {
+    position: fixed;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 30vh;
+    background-color: blue;
+    width: 95%;
+    margin: auto;
+    background-color: #111111;
+    color: #f3f3f3;
+    text-align: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+/*# sourceMappingURL=Nav.module.css.map */
